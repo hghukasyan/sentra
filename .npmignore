@@ -1,0 +1,8 @@
+src/
+test/
+bench/
+*.ts
+tsconfig.json
+.git
+.gitignore
+*.tsbuildinfo

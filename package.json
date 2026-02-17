@@ -1,12 +1,39 @@
 {
   "name": "sentra",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Async retry with exponential backoff for Node.js and browsers.",
   "author": "Hayk Ghukasyan",
   "license": "MIT",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/hghukasyan"
+  },
+  "keywords": [
+    "retry",
+    "retries",
+    "backoff",
+    "exponential-backoff",
+    "async",
+    "promise",
+    "resilience",
+    "resilient",
+    "error-handling",
+    "fetch-retry",
+    "api-retry",
+    "http-retry",
+    "jitter",
+    "circuit-breaker",
+    "abort-signal",
+    "cancellable",
+    "typescript",
+    "nodejs",
+    "browser",
+    "isomorphic",
+    "zero-dependencies"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hghukasyan/sentra.git"
+    "url": "git+https://github.com/hghukasyan/sentra.git"
   },
   "homepage": "https://github.com/hghukasyan/sentra#readme",
   "bugs": {
@@ -22,8 +49,9 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist"],
-  "keywords": ["retry", "backoff", "promise", "resilience", "typescript"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "engines": {
     "node": ">=18"

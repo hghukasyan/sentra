@@ -2,6 +2,8 @@
 
 Async retry with configurable backoff for Node.js and browsers. Retries on thrown or rejected errors; supports per-attempt timeout, optional jitter, circuit breaker, and cancellation via `AbortSignal`.
 
+[![npm version](https://img.shields.io/npm/v/sentra.svg)](https://www.npmjs.com/package/sentra)
+
 ## Installation
 
 ```bash

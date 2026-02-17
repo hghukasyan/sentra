@@ -1,11 +1,11 @@
 /**
- * Minimal benchmark for retri: direct call vs retry wrapper, various retry counts.
+ * Minimal benchmark for sentra: direct call vs retry wrapper, various retry counts.
  * Uses Node.js performance API only. No external benchmarking libraries.
  *
  * Run from repo root after build: node bench/bench.mjs
  */
 
-import { retry } from "retri";
+import { retry } from "sentra";
 
 const ITERATIONS = 10_000;
 const WARMUP = 1_000;
@@ -46,7 +46,7 @@ async function main() {
   }
 
   // Print simple readable results
-  console.log("retri benchmark (Node.js performance API)");
+  console.log("sentra benchmark (Node.js performance API)");
   console.log("==========================================");
   console.log(`Iterations per run: ${ITERATIONS.toLocaleString()}\n`);
 

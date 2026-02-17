@@ -67,10 +67,11 @@ function createRetryError(
   attempts: number,
   elapsed: number
 ): Error {
-  return new Error(
-    `Retry failed after ${attempts} attempts (${elapsed}ms)`,
-    { cause: lastError }
+  const err = new Error(
+    `Retry failed after ${attempts} attempts (${elapsed}ms)`
   );
+  (err as Error & { cause?: unknown }).cause = lastError;
+  return err;
 }
 
 export class CircuitOpenError extends Error {

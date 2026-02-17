@@ -1,17 +1,17 @@
-# retri
+# sentra
 
 Async retry with configurable backoff for Node.js and browsers. Retries on thrown or rejected errors; supports per-attempt timeout, optional jitter, circuit breaker, and cancellation via `AbortSignal`.
 
 ## Installation
 
 ```bash
-npm install retri
+npm install sentra
 ```
 
 ## Usage
 
 ```typescript
-import { retry } from "retri";
+import { retry } from "sentra";
 
 const data = await retry(
   async () => {
@@ -46,7 +46,7 @@ After all attempts are used (or `maxDuration` / `retryOn` stops retries), the la
 Pass an `AbortSignal` to cancel retries when the user navigates away or a parent operation is cancelled.
 
 ```typescript
-import { retry } from "retri";
+import { retry } from "sentra";
 
 const controller = new AbortController();
 

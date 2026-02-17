@@ -1,7 +1,6 @@
 export {
   retry,
-  type RetryOptions,
-  type CircuitBreakerState,
   createCircuitBreakerState,
   CircuitOpenError,
 } from "./retry.js";
+export type { RetryOptions, CircuitBreakerState } from "./retry.js";

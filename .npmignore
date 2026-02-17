@@ -6,3 +6,4 @@ tsconfig.json
 .git
 .gitignore
 *.tsbuildinfo
+.idea

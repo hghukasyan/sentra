@@ -3,7 +3,7 @@ import {
   retry,
   createCircuitBreakerState,
   CircuitOpenError,
-} from "retri";
+} from "sentra";
 
 describe("retry", () => {
   beforeEach(() => {

@@ -3,6 +3,20 @@
 Async retry with configurable backoff for Node.js and browsers. Retries on thrown or rejected errors; supports per-attempt timeout, optional jitter, circuit breaker, and cancellation via `AbortSignal`.
 
 [![npm version](https://img.shields.io/npm/v/sentra.svg)](https://www.npmjs.com/package/sentra)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js version](https://img.shields.io/node/v/sentra.svg)](https://nodejs.org)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [AbortSignal](#abortsignal)
+- [API](#api)
+- [Requirements](#requirements)
+- [Contributing](#contributing)
+- [Security](#security)
+- [License](#license)
 
 ## Installation
 
@@ -60,6 +74,27 @@ const result = await retry(
 // Later: controller.abort() rejects with DOMException "AbortError"
 ```
 
+## API
+
+The package exports:
+
+- **`retry<T>(fn, options?)`** — Runs the async function with retries. Returns a Promise that resolves with the function’s result or rejects with the last error (with attempt info on `cause`).
+
+TypeScript types are included.
+
+## Requirements
+
+- **Node.js:** >= 18 (see [engines](package.json))
+- **Browsers:** Any environment that supports `Promise`, `AbortSignal`, and ES modules.
+
+## Contributing
+
+Contributions are welcome. Please open an [issue](https://github.com/hghukasyan/sentra/issues) or [pull request](https://github.com/hghukasyan/sentra/pulls) on GitHub.
+
+## Security
+
+To report a security vulnerability, please open a [GitHub Security Advisory](https://github.com/hghukasyan/sentra/security/advisories/new) or contact the maintainers responsibly. Do not open public issues for security-sensitive topics.
+
 ## License
 
-MIT
+**MIT License.** You may use, copy, modify, and distribute this software under the terms of the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file in the repository for the full text.

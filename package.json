@@ -1,6 +1,6 @@
 {
   "name": "sentra",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Async retry with exponential backoff for Node.js and browsers.",
   "author": "Hayk Ghukasyan",
   "license": "MIT",
